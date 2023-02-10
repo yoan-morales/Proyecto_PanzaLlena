@@ -1,0 +1,131 @@
+
+:root{
+    --blanco:#fff;
+    --oscuro:#000;
+    --albescent: #f2e2c6;
+    --glacier: #93BDC9;
+    --mongoose: #B69B76;
+    --picton: #4AA4EE;
+    --azure: #3862A2;
+}
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+.contenedor1{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-celeste{
+    background-color: var(--picton);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-celeste:hover{
+    background-color: var(--oscuro);
+}
+
+/*formulario contacto*/
+@media(min-width: 768px) {
+    .formulario-contacto{
+        display: flex;
+    }
+}
+.informacion-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-contacto, .formulario{
+    flex: 0 0 calc(50% );
+}
+.informacion-contacto{
+    background-color: var(--picton);
+    padding: 2rem;
+}
+
+.informacion-contacto h3, .informacion-contacto p, .redes-sociales i{
+    color: var(--blanco);
+}
+.informacion-contacto h3{
+    font-size: 4rem;
+    font-family: 'Marhey', sans-serif;
+}
+
+.informacion-contacto p{
+    font-size: 2.2rem;
+    font-family: 'Open+Sans', sans-serif;
+  
+}
+.informacion-contacto i{
+    margin-right: 1rem;
+}
+
+.redes-sociales{
+    font-size: 3rem;
+}
+
+.formulario{
+    
+    padding: 5rem;
+    background-color: var(--azure);
+}
+
+.input-formulario label{
+    display: block;
+    font-size: 2rem;
+    font-family: 'Open+Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--blanco);
+    padding-top: 10px;
+}
+
+.input-formulario input, .input-formulario textarea{
+    width: 100%;
+}
+.input-formulario input, .input-formulario textarea{
+    padding: 1rem 1.6rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-family:'Open+Sans', sans-serif ;
+}
+.input-formulario textarea{
+    height: 20rem;
+    resize:none;
+}
+
+.copy{
+    text-align: center;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Open+Sans', sans-serif;
+}

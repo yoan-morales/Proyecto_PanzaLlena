@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	margin-bottom:20px;
+    -webkit-transition:height 0.8s;
+    -moz-transition:height 0.8s;
+    -ms-transition:height 0.8s;
+    -o-transition:height 0.8s;
+    transition:height 0.8s;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: linear-gradient(to bottom right, #3862a2, #4aa4ee);
+}
+
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+header .logo {
+	font-size:150px;
+	line-height:180px;
+	float:left;
+    -webkit-transition:height 0.8s;
+    -moz-transition:height 0.8s;
+    -ms-transition:height 0.8s;
+    -o-transition:height 0.8s;
+    transition:height 0.8s;
+}
+
+header nav {
+	float:right;
+	line-height:180px;
+    -webkit-transition:height 0.8s;
+    -moz-transition:height 0.8s;
+    -ms-transition:height 0.8s;
+    -o-transition:height 0.8s;
+    transition:height 0.8s;
+}
+
+header nav a {
+	display:inline-block;
+	color: #f2e2c6;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+    border-radius:50px;
+    font-family: 'Marhey', sans-serif;
+}
+
+header nav a:hover {
+	background:#4aa4ee;
+}
+
+.header2 {
+	position: fixed;
+	height:100px;
+}
+
+.header2 .logo {
+	line-height:100px;
+	font-size:30px;
+}
+
+.header2 nav {
+	line-height:100px;
+}
+
+.contenedor_imgdecoration{
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(/Imagenes\ R2/img10.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    max-width: 800px;
+    margin: 0px 300px 0px 300px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    display: grid;
+}
+
+.textoimg{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgb(26, 24, 24);
+    font-family: 'Marhey', sans-serif;
+}
+
+.copy{
+    font-size: 15px;
+    color: rgb(26, 24, 24);
+    font-family: 'Open+Sans', sans-serif;
+}
+
+/* Services */
+
+.subtitulo{
+    color: #3862a2;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-family: 'Marhey', sans-serif;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #93bdc9;
+    border-radius: 15px;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.service p{
+    font-family: 'Open+Sans', sans-serif;
+
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #f2e2c6; 
+    font-family: 'Marhey', sans-serif;
+
+}
+
+.number{
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #f4f4f7 0%, #746bad 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #93bdc9;
+    font-weight: 700;
+}
+
+.gallery{
+    background: #b69b76;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #4aa4ee;
+    border-radius: 15px;
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.n-expert{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+footer{
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+    /*background-image: url("../images/background-footer.svg");
+	background-size: cover;
+	background-color: #f2e2c6;
+	-webkit-mask-image: url("../images/background-footer.svg");
+	mask-image: url("../images/background-footer.svg");
+	-webkit-mask-size: cover;
+	mask-size: cover;*/
+	/*background-color: #b69b76;*/
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background: linear-gradient(to bottom right, #b69b76, #997036);
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #f2e2c6;
+    font-size: 18px;
+	text-align: justify;
+}
+
+.box__footer .terms p{
+	font-family: 'Open+Sans', sans-serif;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+	margin-top: 50px;
+    color: #3862a2;
+    font-weight: 700;
+    font-family: 'Marhey', sans-serif;
+
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #f2e2c6;
+    font-weight: 600;
+	font-family: 'Open+Sans', sans-serif;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #f2e2c6;
+	font-family: 'Open+Sans', sans-serif;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #f2e2c6;
+}
+
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+	}
+
+    .contenedor_imgdecoration{
+        height: 250px;
+        margin: 0px 200px 0px 200px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+    
+    .agregarImagen{
+        width: 80%;
+    }
+    
+    .cont-expert{
+        width: 80%;
+    }
+
+    .contenedor_imgdecoration {
+        margin: 0px 120px ;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .contenedor_imgdecoration {
+        margin: 0px 50px;
+    }
+
+}

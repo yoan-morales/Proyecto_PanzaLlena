@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    font-family: 'Marhey', sans-serif;
+}
+
+/*globales*/
+.contenedor-filtro{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.btn{   
+    text-decoration: none;
+    color: #f2e2c6;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 5rem;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+
+.btn-celeste{
+    background-color: #3862a2;
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: 'Marhey', sans-serif;
+}
+.btn-celeste:hover{
+    background-color: #b69b76;
+    cursor: pointer;
+}
+
+/*seccion de la galeria como tal*/
+.texto-productos{
+    text-align: center;
+    font-size: 35px;
+}
+
+.botones-filtros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botones-filtros button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+@media(min-width: 768px) {
+    .botones-filtros{
+        display: inline-block;
+    }
+    .botones-filtros button{
+        flex: unset;
+    }
+}
+@media(min-width: 768px) {
+    .productos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+}
+.producto{
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.producto h2{
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    font-size: 20px;
+}
+.producto p{
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Open+Sans', sans-serif;
+}
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.precio p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.precio button{
+    padding:1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #3862a2;
+    color: #f2e2c6;
+    height: 3.8rem;
+}
+
+.precio button:hover {
+    background-color: #b69b76;
+    cursor: pointer;
+}

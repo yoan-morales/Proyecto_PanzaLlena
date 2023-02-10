@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    /*border: solid 2px, black;*/
+}
+
+.grid div{
+    background-color: #4aa4ee;
+    padding: 10px;
+    
+}
+
+.grid .box_one{
+    border-top-left-radius: 15px;
+}
+
+.grid .box_two{
+    border-top-right-radius: 15px;
+}
+
+.grid .box_three{
+    border-bottom-left-radius: 15px;
+}
+
+.grid .box_four{
+    border-bottom-right-radius: 15px;
+}
+
+.grid div .imagen{
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.grid div p{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px 40px 20px 40px;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+.imagen{
+    transition: transform 1s;
+}
+
+.imagen:hover{
+    transform: scale(1.2);
+}
+
+.grid div:hover{
+    background: #93bdc9;
+}
+
+.descripcion{
+    height: 40px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.descripcion:hover{
+    height: 145px;
+}
+
+@media screen and (max-width: 950px) {
+    .grid div .imagen{
+        padding-left: 130px;
+        padding-right: 130px;
+    } 
+
+}
+
+@media screen and (max-width: 800px) {
+    .grid div p{
+        padding: 10px 30px 20px 30px;
+    }
+
+    .grid div .imagen{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .grid div p{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .grid div .imagen{
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+
+    .imagen{
+        transform: scale(.8);
+    }
+
+    .imagen:hover{
+        transform: scale(1);
+    }
+
+    .descripcion:hover{
+        height: 230px;
+    }
+
+}

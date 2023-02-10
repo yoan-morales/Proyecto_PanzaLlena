@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="https://kit.fontawesome.com/555660aeaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS R1/estilomain.css">
+    <link rel="stylesheet" href="CSS R1/estilom.css">
+    <link rel="stylesheet" href="CSS R1/estiloh.css">
+    <link rel="stylesheet" href="CSS R1/estilost.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+    <link rel="stylesheet" href="CSS WHATS/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="CSS WHATS/whats2.css">
+        <div class="nav-bottom">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top">
+                    <button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                    </button>
+
+                    <p>  <img data-src="Imagen Whats/secretary.png" width="50">  Hola, ¿En que podemos ayudarte? </p>
+
+                </div>
+                <div class="content-whatsapp -bottom">
+                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..."/>
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i class="material-icons icon-font-color--black">send</i>
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" id="whats-openPopup" class="whatsapp-button">
+                <div class="float" >
+                    <i class="fa fa-whatsapp my-float"></i>
+                </div>
+            </button>
+            <div class="circle-anime"></div>
+        </div>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><img data-src="Imagenes R1/azulclaro.png" alt=""></div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/filtro.html">Productos</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="login.html">Iniciar sesión</a>
+            </nav>
+        </div>
+        
+    </header>
+    <br>
+    <br>
+    <section class="animacion">
+        <div class="frame">
+            <div class="circle"></div>
+            <div class="line left"></div>
+            <div class="line right"></div>
+            <div class="bracket left"></div>
+            <div class="bracket right"></div>
+            <div class="small top">conoce</div>
+            <div class="big">marcas</div>
+            <div class="small bottom">nuestras</div>
+            <div class="hide top"></div>
+            <div class="hide bottom"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="grid">
+            <div class="box_one">
+                <img class= "imagen" data-src="Imagenes R1/marca01.png"> 
+                <p class="descripcion">Pedigree es una marca que tiene muchos beneficios y nutrientes como lo son: Proteínas (Mín.)	21.0% Grasa (Mín.)	8.0%, Cenizas (Máx.) 12.0%, Humedad (Máx.) 12.0%, Fibra Cruda (Máx.) 4.0%, Calcio (Mín.) 1.00%, Fosforo (Mín.) 0.90%</p>
+            </div>
+            <div class="box_two">
+                <img class= "imagen" data-src="Imagenes R1/marca02.png">
+                <p class="descripcion">Hills es una marca que tiene los mejores ingredientes y nutrientes como lo son: Proteína 23,3%, Contenido de grasa 13,1%, Fibra bruta 2,3%, Ceniza bruta 6,1%, Calcio 0,98%, Fósforo 0,71%, Sodio 0,36%, Potasio 0,85%, Magnesio 0,08%</p>
+            </div>
+            <div class="box_three">
+                <img class= "imagen" data-src="Imagenes R1/marca03.png">
+                <p class="descripcion">Pro Plan es una marca que busca alimentar tanto a nuestros perritos como a también a los gatos y contiene los siguientes nutrientes: Exclusiva combinación de aminoácidos, antioxidantes naturales, vitaminas del complejo B y Omega 6 y 3, que ayudan a proteger y mantener la actividad cerebral de los gatos mayores.</p>
+            </div>
+            <div class="box_four">
+                <img class= "imagen" data-src="Imagenes R1/marca04.png">
+                <p class="descripcion">Con Max tu perro se alimentará con un producto libre de colorantes y aromatizantes artificiales y los siguientes nutrientes: Humedad (máx.) 12%, Proteína Bruta (mín.) 23%, Grasas (mín.) 12%, Fibras (máx.) 4%, Materia Mineral (máx.) 11%, Calcio (máx.)2,4%, Fósforo (mín.) 0,8%</p>
+            </div>
+            
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Estos son lo botones y los nombres con los que se van a llamar en el js-->
+    <section class="contenedor-filtro" id="filtro">
+        <h2 class="texto-productos">Galeria de Productos</h2><br>
+        <div class="botones-filtros">
+            <button class="todos btn btn-celeste">Todos</button>
+            <button class="perros btn btn-celeste">Comida para Perros</button>
+            <button class="gatos btn btn-celeste">Comida para Gatos</button>
+            <button class="promociones btn btn-celeste">Promociones</button>
+        </div>
+
+        <!--Aqui ya emopieza la organizacion del filtro-->
+
+        <div class="productos">
+            <div class="producto" data-producto="perros">
+                <img data-src="Imagenes R1/perros1.jpg" alt="perros">
+                <h2>Hill’s Adulto Small & Toy Breed</h2>
+                <p>Alimento que proporciona nutrición equilibrada y fácil de digerir para perros de razas miniatura.</p><br>
+                <div class="precio">
+                    <p>$88.000</p>
+                    <a href="https://buy.stripe.com/test_eVa5mnbsNcNS1Es6oo"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="perros">
+                <img data-src="Imagenes R1/perros2.jpg" alt="perros">
+                <h2>Hill’s Perro Adulto Original</h2>
+                <p>Comida para perros adultos que proporciona nutrición balanceada para lograr una diferencia visible.</p>
+                <div class="precio">
+                    <p>$77.500</p>
+                    <a href="https://buy.stripe.com/test_00gbKLfJ315aaaYaEF"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="perros">
+                <img data-src="Imagenes R1/perros3.jpg" alt="perros">
+                <h2>Hill’s Perro Cachorro Original</h2>
+                <p>Comida para perros cachorros de todas las razas, para perras en gestación o lactancia. Nutrición completa y balanceada.</p>
+                <div class="precio">
+                    <p>$83.500</p>
+                    <a href="https://buy.stripe.com/test_6oE9CD9kF8xCfvi7su"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+
+            <div class="producto" data-producto="gatos">
+                <img data-src="Imagenes R1/gatos1.jpg" alt="gatos">
+                <h2>Hill’s Gato Adulto Light</h2><br><br>
+                <p>Recomendado para gatos adultos de 1-6 años de edad que requieren menos calorías (gatos menos activos, castrados o propensos a obesidad)</p><br>
+                <div class="precio">
+                    <p>$96.200</p>
+                    <a href="https://buy.stripe.com/test_dR6cOPbsNbJO1EscMP"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="gatos">
+                <img data-src="Imagenes R1/gatos2.jpg" alt="gatos">
+                <h2>Hill’s Gato Adulto Sensitive Skin and Stomach</h2>
+                <p>Alimento seco para gatos adultos que proporciona una nutrición equilibrada para sistemas digestivos sensibles y mejora la salud de la piel y el pelo.</p><br>
+                <div class="precio">
+                    <p>$84.000</p>
+                    <a href="https://buy.stripe.com/test_7sI9CDcwR5lqcj6dQU"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="gatos">
+                <img data-src="Imagenes R1/gatos3.jpg" alt="gatos">
+                <h2>Hill’s Gato Adulto Control Bolas de Pelo 1 a 6 años</h2>
+                <p>Alimento para gatos que proporciona una nutrición equilibrada para ayudar a evitar la formación de bolas de pelo. Recomendado para adultos de 1 a 6 años.</p>
+                <div class="precio">
+                    <p>$98.900</p>
+                    <a href="https://buy.stripe.com/test_bIY5mnbsN3di2IwcMR"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion1.jpg" alt="promociones">
+                <h2>Pedigree Pouch Raza Pequeña Pollo 100 gr</h2>
+                <p>Pedigree Pouch Adultos Razas Pequeñas 100 gr es un alimento húmedo para perros de razas pequeñas.</p>
+                <div class="precio">
+                    <p>$5.700</p>
+                    <a href="https://buy.stripe.com/test_bIY023aoJ6puerecMS"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion2.jpg" alt="promociones">
+                <h2>Pedigree Pouch Adultos Carne 100 gr</h2>
+                <p>Pedigree Pouch Adultos es un alimento que brinda una nutrición profesional completa y balanceada para mantenerlo saludable durante toda su vida.</p>
+                <div class="precio">
+                    <p>$2.500</p>
+                    <a href="https://buy.stripe.com/test_bIYdST8gBdRWfvi3cj"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion3.jpg" alt="promociones">
+                <h2>Pedigree Cachorro Etapa 1</h2><br><br>
+                <p>Pedigree Etapa 1 Cachorro es un alimento para cachorros que tienen entre 2 y 6 meses y para madres en periodo de lactancia o gestación.</p>
+                <div class="precio">
+                    <p>$20.600</p>
+                    <a href="https://buy.stripe.com/test_8wMg11cwRcNS2Iw5ks"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion4.jpg" alt="promociones">
+                <h2>Whiskas Lata Carne 290 gr</h2><br><br>
+                <p>Deliciosa receta con sabor a carne para gatos. Alimento completo y balanceado para gatos adultos de todas las razas.</p><br><br>
+                <div class="precio">
+                    <p>$5.700</p>
+                   <a href="https://buy.stripe.com/test_5kA7uv68tg04bf29AJ"><button><i class="fa-solid fa-store"></i></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion5.jpg" alt="promociones">
+                <h2>Felix Pouches Sensaciones De Salmón y Pavo en Salsa</h2>
+                <p>Felix Pouches Sensaciones de Salmón y Pavo en Salsa, son trocitos de salmón y pavo acompañados de una deliciosa salsa.</p><br><br>
+                <div class="precio">
+                    <p>$3.100</p>
+                    <a href="https://buy.stripe.com/test_6oEdST1Sdg040AocMW"><button><i class="fa-solid fa-store"></i></button></a>
+                </div>
+            </div>
+            <div class="producto" data-producto="promociones">
+                <img data-src="Imagenes R1/promocion6.jpg" alt="promociones">
+                <h2>Nutre Cat Lata Gourmet Atún y Camarón</h2>
+                <p>NutreCat Lata Gourmet Atún Y Camarón es un alimento completo 100% natural, elaborado sin subproductos animales, para gatitos destetados a partir de los 2 meses de edad y gatos adultos de todas las razas y tamaños.</p>
+                <div class="precio">
+                    <p>$3.800</p>
+                    <a href="https://buy.stripe.com/test_cN2dST8gBeW0dna14g"><button><i class="fa-solid fa-store"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img data-src="Imagenes R1/clarito.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Para PanzaLlena, la salud y bienestar de tu mascota es lo más importante. Nos esforzamos día a día por dar la mejor experiencia y servicio a nuestros clientes y para que a tus peluditos no les falte nada para su cuidado y salud. Pero no queremos ser una tienda online más, queremos ser la tuya donde encuentras calidad, buen precio y comodidad al comprar.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Sucursales</h2>
+                <a href="#">Bogotá</a>
+                <a href="#">Medellín</a>
+                <a href="#">Tunja</a>
+                <a href="#">Cali</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Servicios</a>
+                <a href="#">Soporte</a>
+                <a href="#">Contacto</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>Desarrolladores Pablo Acosta | Yoan Morales | Daniel Coba.</b></p>
+        </div>
+    </footer>
+
+    <script src="JS R1/filtro.js"></script>
+    <script src="JS R1/header.js"></script>
+    <script  src="JS WHATS/whatsapp.js"></script>
+
+</body>
+</html>
